@@ -1,0 +1,15 @@
+{
+  "name": "my-electron-tool",
+  "version": "1.0.0",
+  "description": "desktop app for ssh tool",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vishwanath Hariharan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.2.3"
+  }
+}
