@@ -1,15 +1,37 @@
 {
-  "name": "my-electron-tool",
+  "name": "ssh-desktool",
   "version": "1.0.0",
   "description": "desktop app for ssh tool",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": "Vishwanath Hariharan",
   "license": "ISC",
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.1",
+    "@electron-forge/maker-deb": "^6.0.1",
+    "@electron-forge/maker-rpm": "^6.0.1",
+    "@electron-forge/maker-squirrel": "^6.0.1",
+    "@electron-forge/maker-zip": "^6.0.1",
     "electron": "^21.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishwanathh/ssh-desktool.git"
+  },
+  "keywords": [
+    "ssh",
+    "desktop-app"
+  ],
+  "bugs": {
+    "url": "https://github.com/vishwanathh/ssh-desktool/issues"
+  },
+  "homepage": "https://github.com/vishwanathh/ssh-desktool#readme",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
