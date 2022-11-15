@@ -10,12 +10,21 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
+    <link rel="stylesheet" href="./node_modules/xterm/css/xterm.css" />
+    <script src="./node_modules/xterm/lib/xterm.js"></script>
     <title>Hello from Electron renderer!</title>
   </head>
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
+    <h1>Electron SSH desktop tool</h1>
+    <input type="button" id="sshbutton" value="Launch SSH Term" />
+    <div id="terminal"></div>
+    <br/>
     <p id="info"></p>
-  </body>
-  <script src="./renderer.js"></script>
+     Title: <input id="title"/>
+      <button id="btn" type="button">Set</button>
+<br/>
+      <button type="button" id="openbtn">Open a File</button>
+      File path: <strong id="filePath"></strong>
+      <script src="./renderer.js"></script>
+  </body> 
 </html>
